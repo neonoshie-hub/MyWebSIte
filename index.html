@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neo Noshie — étudiant ingénieur, data</title>
+<meta name="description" content="Neo Noshie, étudiant ingénieur à l'EPF Montpellier, orienté data. Recherche un stage data de 4 à 6 mois en 2027, de préférence à l'international.">
+<meta name="theme-color" content="#0B2BD6">
+<meta property="og:title" content="Neo Noshie — étudiant ingénieur, data">
+<meta property="og:description" content="CV, projets et contact. Stage data de 4 à 6 mois à partir de juillet ou septembre 2027.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230B2BD6'/%3E%3Ctext x='32' y='45' font-family='Arial,sans-serif' font-size='40' font-weight='700' text-anchor='middle' fill='white'%3EN%3C/text%3E%3C/svg%3E">
+
+<style>
+  :root {
+    --paper: #ffffff;
+    --ink: #1b1f2a;
+    --muted: #5b6270;
+    --rule: #d9dde6;
+    --blue: #0b2bd6;
+    --on-blue: #ffffff;
+    --blue-hover: #091fa3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #0f121b;
+      --ink: #eceef5;
+      --muted: #99a0b2;
+      --rule: #272c3b;
+      --blue: #8095ff;
+      --on-blue: #0a0f24;
+      --blue-hover: #a3b2ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.55;
+  }
+  .wrap {
+    max-width: 36rem;
+    margin: 0 auto;
+    padding: clamp(1.25rem, 5vw, 2.75rem);
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+  }
+  .top { display: flex; justify-content: flex-end; gap: .25rem; }
+  .top button {
+    font: inherit; font-size: .95rem;
+    background: none; border: 0; border-radius: 4px;
+    color: var(--muted); padding: .5rem .6rem; min-height: 44px; min-width: 44px;
+    cursor: pointer;
+  }
+  .top button[aria-pressed="true"] { color: var(--ink); font-weight: 700; text-decoration: underline; text-underline-offset: 5px; text-decoration-color: var(--blue); text-decoration-thickness: 2px; }
+  .top button:hover { color: var(--ink); }
+
+  h1 {
+    margin: 2.25rem 0 .35rem;
+    font-size: clamp(2.6rem, 11vw, 4rem);
+    line-height: 1;
+    letter-spacing: -.03em;
+    font-weight: 800;
+  }
+  .role { margin: 0 0 1.5rem; color: var(--muted); }
+  .seek {
+    margin: 0;
+    max-width: 30rem;
+    font-size: clamp(1.25rem, 4.6vw, 1.5rem);
+    line-height: 1.4;
+    font-weight: 400;
+    color: var(--ink);
+  }
+  .seek strong { font-weight: 700; color: var(--blue); }
+
+  .cta {
+    display: block;
+    margin: 2.25rem 0 0;
+    padding: 1.05rem 1.15rem;
+    background: var(--blue);
+    color: var(--on-blue);
+    border-radius: 6px;
+    text-decoration: none;
+    min-height: 56px;
+  }
+  .cta:hover { background: var(--blue-hover); }
+  .cta .label { display: block; font-weight: 700; font-size: 1.15rem; }
+  .cta .hint { display: block; font-size: .95rem; opacity: .85; }
+
+  .links { list-style: none; margin: 1.25rem 0 0; padding: 0; border-top: 1px solid var(--rule); }
+  .links a {
+    display: block; padding: 1rem .25rem; min-height: 56px;
+    border-bottom: 1px solid var(--rule);
+    color: inherit; text-decoration: none;
+  }
+  .links .label { display: block; font-weight: 600; }
+  .links .hint { display: block; color: var(--muted); font-size: .95rem; overflow-wrap: anywhere; }
+  .links a:hover .label { color: var(--blue); text-decoration: underline; text-underline-offset: 4px; }
+
+  h2 { margin: 2.75rem 0 .75rem; font-size: 1.2rem; font-weight: 700; letter-spacing: -.01em; }
+  dl { margin: 0; }
+  dt { font-weight: 600; margin-top: 1rem; }
+  dt:first-child { margin-top: 0; }
+  dd { margin: .1rem 0 0; color: var(--muted); }
+  dd a { color: var(--blue); text-underline-offset: 3px; }
+  p.about { margin: 0; }
+  p.about + p.about { margin-top: .85rem; }
+
+  footer { margin-top: auto; padding-top: 3rem; color: var(--muted); font-size: .9rem; }
+
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="top" role="group" aria-label="Langue / Language">
+    <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+    <button type="button" data-lang="en" aria-pressed="false">EN</button>
+  </div>
+
+  <main>
+    <h1>Neo Noshie</h1>
+    <p class="role" data-i18n="role"></p>
+    <p class="seek" data-i18n="seek"></p>
+
+    <!-- CV : mets les deux PDF dans le même dossier que ce fichier, avec exactement ces noms -->
+    <a class="cta" id="cv" href="CV_Neo_Noshie_FR.pdf">
+      <span class="label" data-i18n="cvLabel"></span>
+      <span class="hint" data-i18n="cvHint"></span>
+    </a>
+
+    <ul class="links">
+      <li>
+        <a href="https://phaser.darties.fr/realisations/2026_EPF/LoopQuest_FLEURISSON-COQUIBUS_Maxence_NAGI--DOLIGEZ_Nael_AGUERA-DELAPEINE_Alexandre_NOSHIE_Neo/" target="_blank" rel="noopener">
+          <span class="label" data-i18n="gameLabel"></span>
+          <span class="hint" data-i18n="gameHint"></span>
+        </a>
+      </li>
+      <li id="li-row">
+        <a id="li" href="https://www.linkedin.com/in/neo-noshie/" target="_blank" rel="noopener">
+          <span class="label">LinkedIn</span>
+          <span class="hint" data-i18n="liHint"></span>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:neo.noshie@epfedu.fr">
+          <span class="label" data-i18n="mailLabel"></span>
+          <span class="hint">neo.noshie@epfedu.fr</span>
+        </a>
+      </li>
+    </ul>
+
+    <!-- VIDÉO CV : quand elle sera prête, ajoute ici une ligne <li> comme les autres (lien YouTube ou fichier .mp4) -->
+
+    <h2 data-i18n="projTitle"></h2>
+    <dl>
+      <dt data-i18n="p1n"></dt><dd data-i18n="p1d"></dd>
+      <dt data-i18n="p2n"></dt><dd data-i18n="p2d"></dd>
+      <dt data-i18n="p3n"></dt><dd data-i18n="p3d"></dd>
+    </dl>
+
+    <h2 data-i18n="aboutTitle"></h2>
+    <p class="about" data-i18n="about1"></p>
+    <p class="about" data-i18n="about2"></p>
+  </main>
+
+  <footer data-i18n="footer"></footer>
+</div>
+
+<!-- Statistiques de visite (optionnel) : crée un compte gratuit sur goatcounter.com puis décommente en remplaçant TON-CODE
+<script data-goatcounter="https://TON-CODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+-->
+
+<script>
+  var GAME = "https://phaser.darties.fr/realisations/2026_EPF/LoopQuest_FLEURISSON-COQUIBUS_Maxence_NAGI--DOLIGEZ_Nael_AGUERA-DELAPEINE_Alexandre_NOSHIE_Neo/";
+  var T = {
+    fr: {
+      role: "Étudiant ingénieur à l'EPF Montpellier, orienté data.",
+      seek: "Je cherche un <strong>stage data</strong> de <strong>4 à 6 mois</strong> à partir de <strong>juillet ou septembre 2027</strong>, de préférence <strong>à l'international</strong>.",
+      cvLabel: "Télécharger mon CV", cvHint: "PDF, 1 page",
+      gameLabel: "Jouer à Loop Quest", gameHint: "Escape game 2D, vainqueur d'une game jam",
+      liHint: "Parcours et expériences",
+      mailLabel: "Me contacter",
+      projTitle: "Projets",
+      p1n: "Loop Quest", p1d: "Escape game 2D en Pygame et Phaser, créé en 4 jours à 4 : 9 mini-cartes, ennemis, énigmes, chrono. J'étais chef de projet. Vainqueur du tournoi. <a href=\"" + GAME + "\" target=\"_blank\" rel=\"noopener\">À vous de tester !</a>",
+      p2n: "Robot piloté en Wi-Fi", p2d: "Robot à 4 roues sur ESP32 avec manette sur mesure, construit de toutes pièces par l'équipe.",
+      p3n: "En cours", p3d: "Un capteur BME280 (température, humidité, pression) et l'analyse d'un système mécanique sous AMESim.",
+      aboutTitle: "À propos",
+      about1: "J'ai grandi à Beyrouth et passé mon bac au Grand Lycée Franco-Libanais, entre deux cultures. Aujourd'hui, j'étudie à l'EPF Montpellier avec une ambition claire : construire une carrière dans la data qui me passionne et m'épanouit, de préférence à l'étranger.",
+      about2: "Ce qui me pousse, c'est la curiosité : comprendre comment les choses fonctionnent, apprendre vite, recommencer. J'adore découvrir d'autres cultures, et la summer school en Chine, avec des étudiants de 11 pays, a confirmé mon choix de la data. Titulaire du statut national étudiant-entrepreneur (SNEE), je candidate aussi au hackathon Désinformation & Souveraineté Démocratique en décembre. Et je plonge toujours, au niveau Master (équivalent IANTD).",
+      footer: "Montpellier, France",
+      cv: "CV_Neo_Noshie_FR.pdf", title: "Neo Noshie — étudiant ingénieur, data"
+    },
+    en: {
+      role: "Engineering student at EPF Montpellier, focused on data.",
+      seek: "I'm looking for a <strong>data internship</strong> of <strong>4 to 6 months</strong> starting <strong>July or September 2027</strong>, ideally <strong>abroad</strong>.",
+      cvLabel: "Download my CV", cvHint: "PDF, 1 page",
+      gameLabel: "Play Loop Quest", gameHint: "2D escape game, game jam winner",
+      liHint: "Background and experience",
+      mailLabel: "Get in touch",
+      projTitle: "Projects",
+      p1n: "Loop Quest", p1d: "2D escape game built with Pygame and Phaser in 4 days, in a team of 4: 9 connected mini-maps, enemies, puzzles, timer. I was the project lead. Tournament winner. <a href=\"" + GAME + "\" target=\"_blank\" rel=\"noopener\">Your turn to test it!</a>",
+      p2n: "Wi-Fi controlled robot", p2d: "4-wheel robot on an ESP32 with a custom controller, built from scratch by the team.",
+      p3n: "In progress", p3d: "A BME280 sensor (temperature, humidity, pressure) and the analysis of a mechanical system with AMESim.",
+      aboutTitle: "About",
+      about1: "I grew up in Beirut and took my baccalauréat at the Grand Lycée Franco-Libanais, between two cultures. Today I study at EPF Montpellier with a clear ambition: to build a career in data that excites and fulfils me, preferably abroad.",
+      about2: "What drives me is curiosity: understanding how things work, learning fast, starting again. I love discovering other cultures, and the summer school in China, with students from 11 countries, confirmed my choice of data. I hold the French national student-entrepreneur status (SNEE) and I'm applying to the Disinformation & Democratic Sovereignty hackathon in December. And I still scuba dive, at Master level (IANTD equivalent).",
+      footer: "Montpellier, France",
+      cv: "CV_Neo_Noshie_EN.pdf", title: "Neo Noshie — engineering student, data"
+    }
+  };
+
+  // CV par entreprise : ?c=capgemini -> CV_Neo_Noshie_FR_capgemini.pdf si ce fichier existe, sinon le CV standard
+  var company = (new URLSearchParams(location.search).get("c") || "").toLowerCase();
+  if (!/^[a-z0-9-]{1,40}$/.test(company)) company = "";
+  function setCv(l) {
+    var cv = document.getElementById("cv");
+    cv.setAttribute("href", T[l].cv);
+    if (!company) return;
+    var special = "CV_Neo_Noshie_" + l.toUpperCase() + "_" + company + ".pdf";
+    fetch(special, { method: "HEAD" }).then(function (r) {
+      if (r.ok && document.documentElement.lang === l) cv.setAttribute("href", special);
+    }).catch(function () {});
+  }
+
+  function setLang(l) {
+    var d = T[l];
+    document.documentElement.lang = l;
+    document.title = d.title;
+    document.querySelectorAll("[data-i18n]").forEach(function (el) { el.innerHTML = d[el.getAttribute("data-i18n")]; });
+    setCv(l);
+    document.querySelectorAll(".top button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.lang === l)); });
+    try { localStorage.setItem("lang", l); } catch (e) {}
+  }
+
+  document.querySelectorAll(".top button").forEach(function (b) {
+    b.addEventListener("click", function () { setLang(b.dataset.lang); });
+  });
+
+  var saved = null;
+  try { saved = localStorage.getItem("lang"); } catch (e) {}
+  var start = saved || ((navigator.language || "fr").toLowerCase().indexOf("fr") === 0 ? "fr" : "en");
+  setLang(T[start] ? start : "fr");
+
+</script>
+</body>
+</html>
